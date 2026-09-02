@@ -1,0 +1,14 @@
+Feature,Type,Description
+Loan_ID,Identifier,Unique application identifier; removed before modeling
+Gender,Categorical,Applicant gender
+Married,Categorical,Marital status
+Dependents,Categorical,Number of dependents; 3+ means three or more
+Education,Categorical,Graduate or Not Graduate
+Self_Employed,Categorical,Self-employed status
+ApplicantIncome,Numeric,Applicant income
+CoapplicantIncome,Numeric,Co-applicant income
+LoanAmount,Numeric,Requested loan amount
+Loan_Amount_Term,Numeric,Loan term in months
+Credit_History,Numeric/Binary,"1 = positive credit history, 0 = not positive"
+Property_Area,Categorical,"Urban, Semiurban, or Rural"
+Loan_Status,Target,"Y = Approved, N = Rejected"

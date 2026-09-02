@@ -1,0 +1,25 @@
+class Father: 
+     def father_property(self):
+          return "Father property "
+     def m1(self):
+          return "Method m1 from Father class"
+     
+class Mother:
+     def mother_property(self):
+          return "Mother property "
+    
+     def m1(self):
+          return "Method m2 from Mother class"
+     
+class Child(Mother, Father):  
+     def child_property(self):
+          return "Child property "
+    #  def m1(self):
+    #         return "Method m3 from Child class"
+
+obj = Child()
+# print(obj.father_property())
+# print(obj.mother_property())
+# print(obj.child_property())
+print(obj.m1())
+print(Child.mro())

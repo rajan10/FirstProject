@@ -1,0 +1,39 @@
+Monitor security alerts and events from a range of security technologies, including SIEM, EDR, email security, network security, and cloud security platforms.
+ Analyse, triage, and investigate security alerts to determine their severity, scope, and potential business impact.
+ Respond to security incidents in accordance with established playbooks, procedures, and service level agreements (SLAs).
+ Escalate confirmed or suspected security incidents to Incident Management and Response teams, providing clear documentation and supporting evidence.
+ Contribute to the development and continuous improvement of operational processes, playbooks, and standard operating procedures.
+ Stay informed of the latest cyber threats, threat actor tactics, techniques and procedures (TTPs), vulnerabilities, and industry best practices.
+ Collaborate with Threat Intelligence, Detection Engineering, Threat Hunting, Security Engineering, and Incident Response teams to improve detection and response capabilities.
+ Assist in identifying opportunities to improve automation and tune detection rules.
+ Communicate investigation findings and technical information clearly to both technical and non technical stakeholders.
+ Ensure all activities are performed in accordance with CGI security policies, standards, and regulatory requirements.
+ Mentor and support junior analysts, providing coaching, guidance, and constructive feedback to develop their technical, analytical, and professional skills.
+
+Required Qualifications To Be Successful In This Role
+
+ Experience working in a Security Operations Centre or equivalent cybersecurity operational role, or demonstrable hands on experience investigating security events through academic, military, apprenticeship, or industry experience.
+ Experience monitoring, analysing, and investigating security alerts across a variety of security technologies.
+ Good understanding of cyber threat actor tactics, techniques and procedures (TTPs), including the MITRE ATT&CK framework.
+ Knowledge of common attack vectors, malware, phishing, identity based attacks, and modern cyber threats.
+ Understanding of networking concepts and protocols, including TCP/IP, DNS, HTTP/S, SMTP, VPNs, and firewalls.
+ Knowledge of Windows, Linux, and Active Directory security fundamentals.
+ Experience using security technologies such as SIEM, Endpoint Detection and Response (EDR), email security, cloud security, or network detection tools.
+ Strong analytical, problem solving, and investigative skills with the ability to make risk based decisions.
+ Excellent written and verbal communication skills, including the ability to document investigations clearly.
+ Ability to work effectively in a collaborative, global team environment.
+ A proactive approach to learning and keeping current with the evolving cybersecurity landscape.
+ Experience with AI technologies, including generative AI and machine learning solutions, is desirable.
+
+Qualifications & Certifications
+
+ Degree in Cyber Security, Computer Science, Information Technology, or a related discipline, or equivalent practical experience.
+ Relevant industry certifications are desirable, including one or more of:
+ CompTIA Security+
+ CompTIA CySA+
+ Microsoft SC 200: Security Operations Analyst
+ Microsoft AZ 500: Azure Security Engineer
+ GIAC Certified Incident Handler (GCIH)
+ GIAC Certified Intrusion Analyst (GCIA)
+ ISC2 Certified in Cybersecurity (CC)
+ CISSP

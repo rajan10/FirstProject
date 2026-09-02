@@ -1,0 +1,20 @@
+import datetime
+import keyword
+import random
+import sys
+print(keyword.kwlist)
+print(keyword.iskeyword("if"))
+print(len(keyword.kwlist))
+
+a=10
+b="hello"
+c='c'
+print(a, type(a), sys.getsizeof(a), id(a))
+print(b, type(b), sys.getsizeof(b), id(b))
+print(c, type(c), sys.getsizeof(c), id(c))
+print(random.randint(1, 100))
+
+today=datetime.date.today()
+time=datetime.datetime.now()
+print(today)
+print(time)

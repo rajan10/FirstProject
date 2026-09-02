@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_csv("students.csv")
+print(df.head(1))
+print(df.info())
+print(df.shape)
+print(df.describe())
+print(df.describe(include="all"))
+print(df["marks"].mean())
+print(df.columns)
+print(df.index)

@@ -1,0 +1,169 @@
+# PROFESSIONAL SUMMARY
+
+Information Security Analyst / Security Engineer with 7+ years of cybersecurity and IT security experience spanning **Security Operations, Cyber Security, security monitoring, threat intelligence, alert triage, incident management, incident response, SIEM, endpoint security, network security, cloud security, vulnerability management, IAM, security engineering, and security automation**. Hands-on experience correlating SIEM logs, endpoint activity, and network traffic; performing **Triage**, threat analysis, **threat hunting**, incident investigation, severity assessment, escalation, containment, remediation, and post-incident follow-up. Experienced with **security policies, regulatory requirements, security technologies, security Playbooks, Runbooks, documentation, and continuous improvement**.
+
+Strong technical background across **Azure, AWS, Active Directory, Microsoft Entra ID, Linux, SIEM platforms, firewalls, VPNs, TCP/IP, TCP, DNS, SMTP, HTTP/S, EDR, vulnerability management, and cloud security**. Experienced in automating security and infrastructure workflows using Python, PowerShell, Bash, APIs, and **AI / machine learning** concepts. Familiar with **CompTIA Security+ concepts**, MITRE ATT&CK, Zero Trust, least privilege, PCI DSS, SOC, and SOX requirements. Strong analytical, investigative, problem-solving, communication, documentation, and cross-functional collaboration skills with a focus on security operations maturity and **continuous improvement**.
+
+# CORE ATS SKILLS & KEYWORDS
+
+**Cybersecurity / Security Operations:** Cyber Security • Cybersecurity • Security Operations • Security Engineering • Security Monitoring • Threat Intelligence • Threat Hunting • Threat Detection • Threat Analysis • Security Event Analysis • Security Alerts • Triage • Incident Management • Incident Response • Incident Investigation • Incident Escalation • Security Operations Center (SOC) • Continuous Improvement
+
+**Security Governance & Compliance:** Security Policies • Security Procedures • Security Standards • Regulatory Requirements • Security Requirements • Security Compliance • Risk Assessment • Risk-Based Decisions • PCI DSS • SOC • SOX • Security Documentation • Technical Documentation • Security Controls • Governance • CompTIA Security+ Concepts
+
+**SIEM / Detection:** SIEM • Splunk • Microsoft Sentinel • IBM QRadar • FortiSIEM • FortiAnalyzer • Log Analysis • Threat Detection • Detection Engineering • Detection Tuning • Security Analytics • Security Playbooks • Playbooks • Runbooks • SOPs • Alert Correlation
+
+**Incident Management / Response:** Incident Management • Incident Response • Incident Investigation • Incident Triage • Threat Hunting • Threat Analysis • Malware Analysis • Containment • Remediation • Escalation • Root Cause Analysis • Incident Documentation • Response Playbooks • Security Procedures
+
+**Network Security:** Network Security • Network Traffic Analysis • TCP/IP • TCP • DNS • SMTP • HTTP/S • SSH • Firewalls • NGFW • IDS/IPS • VPN • IPsec • SSL VPN • Network Segmentation • NAT • DMZ • SSL Inspection
+
+**Cloud Security:** Azure • Microsoft Entra ID • Microsoft Defender for Cloud • AWS • AWS Security Hub • AWS CloudTrail • Cloud IAM • Cloud Security • Cloud Compliance • VPC • Cloud NGFW • CASB
+
+**IAM / PAM:** Active Directory • Microsoft Entra ID • IAM • IGA • RBAC • PAM • SailPoint IIQ • CyberArk • Least Privilege • Zero Trust • MFA • SSO
+
+**Security Technologies:** EDR • Endpoint Security • FortiGate • FortiClient • Firewalls • IDS/IPS • SIEM • Vulnerability Scanners • Security Agents • Security Sensors • Security Monitoring Technologies
+
+**Automation / AI:** Security Automation • Automation • Python • PowerShell • Bash • API Integration • Docker • AI • Artificial Intelligence • Machine Learning • Generative AI • Agentic AI • AI-Assisted Security Analysis • Prompt Engineering
+
+**Operating Systems / Infrastructure:** Linux • Windows • Active Directory • Networking • DNS • TCP/IP • SSH • VPN • Firewalls • Cloud Infrastructure
+
+# PROFESSIONAL EXPERIENCE
+
+## IT Security Engineer / Developer (Contract) | Takeo, Toronto, ON
+
+**June 2021 – August 2025**
+
+* Monitored and investigated security alerts and incidents within **Security Operations**, correlating **SIEM logs, endpoint activity, network traffic, and threat intelligence** to perform alert **Triage**, assess severity and risk, identify suspicious behavior, and escalate confirmed or suspected security incidents.
+
+* Supported **incident management and incident response** activities including investigation, evidence analysis, escalation, containment, remediation, follow-up, and incident documentation while helping improve operational response processes.
+
+* Performed security analysis and **threat hunting** across endpoint, network, identity, and cloud environments to identify indicators of compromise, anomalous behavior, suspicious authentication activity, and potential security threats.
+
+* Applied **security engineering** principles to hybrid-cloud environments by reviewing security configurations, access controls, security technologies, infrastructure controls, and technical security requirements.
+
+* Automated hybrid-cloud security and infrastructure testing workflows using **Python, PowerShell, Bash, APIs, and automation**, creating repeatable processes that improved operational efficiency and supported continuous security testing.
+
+* Strengthened **IAM, RBAC, and cloud security** across AWS and **Azure** using SailPoint IIQ, CyberArk, AWS IAM, Microsoft Entra ID, and **Active Directory**; applied least privilege, Zero Trust, MFA, and SSO principles while reviewing permissions and security configurations for risks and misconfigurations.
+
+* Monitored cloud security events using AWS Security Hub, CloudTrail, Microsoft Defender for Cloud, and Azure monitoring technologies; investigated suspicious activity, cloud configuration risks, identity events, and security control gaps.
+
+* Integrated security technologies through APIs and supported vulnerability management, patching, security monitoring, and operational automation.
+
+* Reviewed and updated **security policies, security standards, procedures, guidelines, baselines, Playbooks, Runbooks, and technical documentation** in collaboration with senior security managers.
+
+* Supported security controls and **regulatory requirements** by documenting security findings, technical recommendations, operational procedures, and remediation activities.
+
+* Contributed to disaster recovery and business continuity planning by reviewing security requirements, recovery procedures, access controls, backup processes, and resilience controls.
+
+* Supported **continuous improvement** of security operations by identifying process gaps, improving automation opportunities, documenting lessons learned, and providing constructive technical recommendations.
+
+## Information Security Analyst (Contract) | Millennium1Solutions, Etobicoke, ON
+
+**June 2019 – June 2021**
+
+* Triaged and monitored security alerts across **SIEM, endpoint, and network security** platforms by validating suspicious activity, assessing severity, analyzing logs and evidence, investigating threats, escalating incidents, and supporting containment, response, and follow-up.
+
+* Participated in **Incident Management, Incident Response, and Security Operations** activities involving security event analysis, investigation, escalation, remediation, documentation, and post-incident review.
+
+* Conducted **threat hunting and threat analysis** using SIEM events, endpoint telemetry, network traffic, security logs, and indicators of compromise to identify suspicious activity and potential threats.
+
+* Performed vulnerability and compliance assessments using Nessus and Tripwire; identified security weaknesses and supported secure configuration, system hardening, patching, remediation, and risk reduction.
+
+* Managed security escalations and change-management activities through RFC and CAB processes while supporting **PCI DSS, SOC, SOX, security policies, and regulatory requirements**.
+
+* Configured and maintained **network security** controls across routers, switches, firewalls, DMZs, and servers; implemented VPN, MFA, network segmentation, firewall rules, and jump-box controls for secure SSH access to **Linux** servers.
+
+* Monitored and analyzed network protocols and services including **TCP/IP, TCP, DNS, SMTP, HTTP/S, and SSH** when troubleshooting security and infrastructure events.
+
+* Developed and maintained security **Playbooks, Runbooks, SOPs, procedures, and documentation** to support consistent alert handling, incident response, escalation, and operational processes.
+
+* Collaborated with infrastructure, application, and business teams during incident response, change management, and security remediation, aligning security controls with operational and regulatory requirements.
+
+* Applied analytical and investigative skills to solve security issues, communicate findings clearly, provide constructive feedback, and support **continuous improvement** of security processes and controls.
+
+## Desktop / Network Support (Contract) | Flamboro Downs, Dundas, ON
+
+**April 2018 – May 2018**
+
+* Deployed and configured 2,500+ endpoints, VPN connections, and secure network setups, supporting reliable user and application connectivity.
+
+* Implemented endpoint security agents and application configurations across deployed systems, improving endpoint protection, security readiness, and operational reliability.
+
+* Supported networking, endpoint security technologies, troubleshooting, and secure configuration activities across enterprise systems.
+
+## IT Support (Contract) | Friends of the Greenbelt, Toronto, ON
+
+**March 2017 – March 2018**
+
+* Monitored **DNS, VPN, wireless, TCP/IP, and firewall infrastructure** and responded to infrastructure and security issues to maintain service availability.
+
+* Conducted disaster-recovery risk analysis and maintained asset inventories to improve preparedness, security visibility, and infrastructure documentation.
+
+* Supported security audits, compliance activities, security policies, and regulatory requirements while deploying antivirus, endpoint security, and encryption technologies.
+
+* Assisted with network segmentation and firewall rule tuning to strengthen the organization's network security posture.
+
+* Provided Tier 2/3 support for escalated OS, application, networking, and hardware incidents and coordinated vendor patching and system upgrades.
+
+# SECURITY PROJECTS
+
+## Security Lab & Hybrid-Cloud Automation | 2021 – 2025
+
+* Built containerized security lab environments using Dockerfiles and images and used **Python, PowerShell, and Bash automation** to automate deployment, configuration, sandboxing, and isolated security testing across hybrid-cloud environments.
+
+* Integrated security technologies through APIs and evaluated **SIEM, endpoint protection, IAM, network security, cloud security, and security monitoring technologies** against documented technical and security requirements.
+
+* Developed repeatable security testing workflows and **Playbooks / Runbooks** to support security operations, incident investigation, troubleshooting, and continuous improvement.
+
+* Explored **AI, machine learning, and Generative AI** applications for security analysis, automation, threat detection, and security operations use cases.
+
+# TECHNICAL SKILLS
+
+**Security Operations / SIEM:**
+Splunk SIEM • Microsoft Sentinel • IBM QRadar • FortiSIEM • FortiAnalyzer • Security Monitoring • Security Operations • Alert Triage • Threat Intelligence • Threat Hunting • Threat Detection • Incident Management • Incident Response • Incident Investigation • Detection Engineering • Detection Tuning • Log Analysis • Playbooks • Runbooks • SOPs
+
+**Network Security:**
+Network Security • Network Traffic Analysis • FortiGate • FortiClient • Firewalls • NGFW • IDS/IPS • NAT • IPsec/SSL VPN • Network Segmentation • Application Control • SSL Inspection • TCP/IP • TCP • DNS • SMTP • HTTP/S • SSH • DMZ
+
+**Cloud Security:**
+AWS Security Hub • AWS CloudTrail • Microsoft Defender for Cloud • Azure Security Monitoring • Microsoft Entra ID • Google Cloud IAM • Cloud IAM • CASB • Cloud Compliance • VPC • Cloud NGFW • Azure • AWS
+
+**IAM / PAM:**
+SailPoint IIQ • CyberArk • Active Directory • Microsoft Entra ID • IAM • IGA • RBAC • PAM • Least Privilege • Zero Trust • MFA • SSO
+
+**Vulnerability / Application Security:**
+Nessus • Qualys • Tripwire • Kali Linux • Metasploit • Burp Suite • OWASP ZAP • Vulnerability Assessment • Secure Configuration • System Hardening • OWASP Security Practices
+
+**Incident / Threat Response:**
+Incident Management • Incident Response • Incident Investigation • Threat Hunting • Threat Intelligence • Threat Detection • Threat Analysis • Malware Analysis • Triage • Detection Engineering • Network Traffic Analysis • Security Playbooks • Runbooks • Incident Documentation
+
+**Security Governance / Compliance:**
+Security Policies • Security Procedures • Security Standards • Security Documentation • Regulatory Requirements • Security Requirements • Security Compliance • Risk Assessment • PCI DSS • SOC • SOX • CompTIA Security+ Concepts
+
+**Programming / Automation:**
+Python • PowerShell • Bash • SQL • Java • JavaScript • C • C++ • API Integration • Security Automation • Automation • Docker
+
+**Operating Systems / Networking:**
+Windows • Linux • Active Directory • Networking • DNS • TCP/IP • TCP • SMTP • VPN • Firewalls • SSH • HTTP/S
+
+**AI / Machine Learning:**
+Artificial Intelligence (AI) • Machine Learning • Generative AI • Agentic AI • Prompt Engineering • Output Evaluation • AI-Assisted Security Analysis • AI-Driven Malware Prevention • AI Security
+
+# EDUCATION & CERTIFICATIONS
+
+* **Master of Computer Application** (4-year Bachelor of Computer Science, WES) — Kantipur City College, Nepal | August 2013
+* **Systems Security Certified Practitioner (SSCP)** — ISC2 | July 2019
+* **Microsoft Azure Fundamentals (AZ-900)** — Microsoft | August 2020
+* **ACE Multi-Cloud Network Associate** — Aviatrix | September 2021
+* **Fortinet NSE 1–2 Certified Cybersecurity** — NPower Canada | August 2026
+* **Mobile Systems Integration (MSI)** — Humber College, Toronto, ON | September 2016
+* **VMware Foundation Course** — Stanly Community College, NC, USA | December 2016
+
+# VOLUNTEER EXPERIENCE
+
+## Computer Tutor | High Park / Parkdale Employment & Social Services, Toronto, ON
+
+**March 2019 – July 2019**
+
+* Provided hands-on technology support and orientation covering computer skills, Microsoft Office, Internet navigation, email setup, password management, online tax filing, PR forms, and technical troubleshooting.
+
+* Assisted users with secure password practices, account access, online services, documentation, and general cybersecurity awareness.

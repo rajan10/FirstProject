@@ -1,0 +1,4 @@
+.venv>>>run this python resume_generator.py input.txt RajanGauchanResume.docx output.docx
+
+
+in the folder your jobscan input  copy and paste to input.txt.  The template is RajanGauchanResume.docs  the output is output.docx

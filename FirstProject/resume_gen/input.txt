@@ -1,0 +1,55 @@
+PROFESSIONAL SUMMARY
+
+Information Security Analyst / Security Engineer with 7+ years of cybersecurity and IT security experience across Security Operations, security monitoring, threat intelligence, alert triage, incident management and response, SIEM, EDR/endpoint, network and cloud security, vulnerability management, IAM, security engineering, and automation. Hands-on experience monitoring and investigating security alerts, correlating SIEM logs, endpoint activity and network traffic, assessing severity, scope, risk and business impact, escalating incidents, and supporting containment and remediation. Experienced with MITRE ATT&CK/TTPs, threat hunting, security Playbooks/Runbooks, documentation, security policies, regulatory requirements, and continuous improvement. Strong background with Azure, AWS, Active Directory, Linux, TCP/IP, DNS, HTTP/S, SMTP, VPNs, firewalls, Python, PowerShell, Bash, AI and machine learning concepts.
+
+CORE SKILLS
+
+Security Operations (SOC) • SIEM • EDR / Endpoint Security • Alert Monitoring & Triage • Incident Management • Incident Response • Threat Intelligence • Threat Hunting • Detection Engineering • MITRE ATT&CK • TTPs • Security Playbooks • SOPs / Runbooks • Incident Documentation • Risk-Based Decisions • Security Policies • Regulatory Requirements • Continuous Improvement • Security Automation • Network Security • Cloud Security • Azure • AWS • Active Directory • Microsoft Entra ID • Linux • Windows • TCP/IP • TCP • DNS • HTTP/S • SMTP • VPN • Firewalls • Python • PowerShell • Bash • APIs • AI • Machine Learning • Generative AI
+
+PROFESSIONAL EXPERIENCE
+
+IT Security Engineer / Developer (Contract) | Takeo, Toronto, ON
+June 2021 – August 2025
+• Monitored and investigated security alerts and incidents across SIEM, endpoint, network and cloud environments; correlated logs, endpoint activity, network traffic and threat intelligence to perform Triage, assess severity/risk, identify suspicious behavior, and escalate confirmed or suspected incidents.
+• Supported Incident Management and Incident Response through investigation, evidence analysis, escalation, containment, remediation, follow-up and clear incident documentation.
+• Performed threat hunting and security analysis across endpoint, network, identity and cloud environments to identify indicators of compromise, anomalous behavior and suspicious authentication activity.
+• Applied security engineering principles to hybrid-cloud environments; reviewed security configurations, access controls, security technologies and technical security requirements across AWS and Azure.
+• Automated hybrid-cloud security and infrastructure testing using Python, PowerShell, Bash and APIs, creating repeatable processes and improving operational efficiency and continuous improvement.
+• Strengthened IAM/RBAC and cloud security using SailPoint IIQ, CyberArk, AWS IAM, Microsoft Entra ID and Active Directory; applied least privilege, Zero Trust, MFA and SSO.
+• Monitored AWS Security Hub, CloudTrail, Microsoft Defender for Cloud and Azure security activity; investigated suspicious events and cloud configuration risks.
+• Reviewed and updated security policies, standards, procedures, Playbooks, Runbooks, baselines and technical documentation; supported vulnerability management and security technology integration.
+• Contributed to disaster recovery/business continuity planning and provided constructive technical recommendations to improve security operations.
+
+Information Security Analyst (Contract) | Millennium1Solutions, Etobicoke, ON
+June 2019 – June 2021
+• Triaged and monitored security alerts across SIEM, endpoint and network security platforms; validated suspicious activity, analyzed logs/evidence, assessed severity, investigated threats, escalated incidents, and supported containment and response.
+• Participated in Incident Management, Incident Response and Security Operations activities including investigation, remediation, documentation and post-incident review.
+• Conducted threat hunting and threat analysis using SIEM events, endpoint telemetry, network traffic, security logs and indicators of compromise.
+• Performed vulnerability and compliance assessments using Nessus and Tripwire; supported secure configuration, hardening, patching and remediation.
+• Managed security escalations and change activities through RFC/CAB processes while supporting PCI DSS, SOC, SOX, security policies and regulatory requirements.
+• Configured network security controls across routers, switches, firewalls, DMZs and servers; implemented VPN, MFA, segmentation, firewall rules and jump-box controls for secure Linux/SSH access.
+• Analyzed TCP/IP, TCP, DNS, SMTP, HTTP/S and SSH during security and infrastructure investigations.
+• Collaborated with infrastructure, application and business teams; communicated investigation findings clearly, provided constructive feedback, and supported continuous improvement.
+
+ADDITIONAL EXPERIENCE
+
+Desktop / Network Support (Contract) | Flamboro Downs, Dundas, ON | Apr 2018 – May 2018
+• Deployed/configured 2,500+ endpoints, VPN connections and secure network setups; implemented endpoint security agents and application configurations.
+
+IT Support (Contract) | Friends of the Greenbelt, Toronto, ON | Mar 2017 – Mar 2018
+• Monitored DNS, VPN, wireless, TCP/IP and firewall infrastructure; supported security audits, compliance, security policies and regulatory requirements; deployed endpoint security/encryption tools and provided Tier 2/3 incident support.
+
+EDUCATION & CERTIFICATIONS
+
+Master of Computer Application (4-year Bachelor of Computer Science, WES) — Kantipur City College, Nepal | 2013
+Systems Security Certified Practitioner (SSCP) — ISC2 | 2019
+Microsoft Azure Fundamentals (AZ-900) — Microsoft | 2020
+ACE Multi-Cloud Network Associate — Aviatrix | 2021
+Fortinet NSE 1–2 Certified Cybersecurity — NPower Canada | 2026
+Mobile Systems Integration (MSI) — Humber College, Toronto, ON | 2016
+VMware Foundation Course — Stanly Community College, NC, USA | 2016
+
+VOLUNTEER EXPERIENCE
+
+Computer Tutor | High Park / Parkdale Employment & Social Services, Toronto, ON | Mar 2019 – Jul 2019
+• Provided technology support covering computer skills, Internet/email, password management and troubleshooting; promoted secure password practices and cybersecurity awareness.
