@@ -1,0 +1,19 @@
+FortiGate is a next-generation firewall developed by Fortinet.
+
+FortiGate can perform firewall policies, NAT, routing, VPN, authentication, and security inspection.
+
+A firewall policy controls traffic between network interfaces.
+
+NAT changes IP address information as traffic passes through the firewall.
+
+A virtual IP, also called VIP, can be used for destination NAT to publish an internal server to external users.
+
+FortiGate supports security profiles such as antivirus, web filtering, application control, and IPS.
+
+ChromaDB is a vector database commonly used to store and retrieve embeddings for AI applications.
+
+RAG stands for Retrieval Augmented Generation.
+
+RAG retrieves relevant information from a knowledge base and provides that information to a language model as context.
+
+Embeddings represent text as numerical vectors so that semantically similar text can be found.
