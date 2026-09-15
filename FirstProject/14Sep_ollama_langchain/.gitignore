@@ -1,0 +1,108 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+# Python cache / test cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# ==========================================
+# Virtual Environment
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+# Your project virtual environment
+.ollama_langchain/
+# ==========================================
+# Environment / Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+# Prevent accidental secret files
+*.pem
+*.key
+*.crt
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+.ipynb_checkpoints/
+# ==========================================
+# FAISS / Vector Database
+# ==========================================
+# Ignore generated FAISS indexes
+faiss_index/
+vector_store/
+vectorstore/
+# FAISS files
+*.faiss
+*.pkl
+# ==========================================
+# Ollama / Local AI generated files
+# ==========================================
+# If models or local model files are ever stored
+# inside the project, don't commit them
+models/
+ollama_models/
+# ==========================================
+# Streamlit
+# ==========================================
+.streamlit/secrets.toml
+# ==========================================
+# Logs
+# =========================================
+*.log
+logs/
+# ==========================================
+# Temporary files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+# ==========================================
+# Windows
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# ==========================================
+# Windows executables / installers
+# ==========================================
+*.exe
+*.msi
+*.dll
+# ==========================================
+# VS Code
+# ==========================================
+.vscode/
+# If you want to share VS Code settings later,
+# remove .vscode/ and selectively ignore secrets.
+# ==========================================
+# PyCharm / JetBrains
+# ==========================================
+.idea/
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+# ==========================================
+# Build / Distribution
+# ==========================================
+build/
+dist/
+*.egg-info/
+# ==========================================
+# Generated reports / output
+# ==========================================
+output/
+outputs/
+generated/
