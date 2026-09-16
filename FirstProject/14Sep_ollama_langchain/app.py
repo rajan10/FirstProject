@@ -20,7 +20,6 @@ Answer
 import streamlit as st
 from db_manager import create_courses_table
 from lang_chain import ask_student
-
 # --------------------------------------------------
 # Page configuration
 # --------------------------------------------------
@@ -29,7 +28,6 @@ st.set_page_config(
     page_icon="🎓",
     layout="centered"
 )
-
 # --------------------------------------------------
 # Initialize database
 # --------------------------------------------------
@@ -43,7 +41,6 @@ st.write(
     "and institute policies."
 )
 st.divider()
-
 # --------------------------------------------------
 # Chat history
 # --------------------------------------------------
@@ -52,7 +49,6 @@ if "messages" not in st.session_state:
 # --------------------------------------------------
 # Display previous messages
 # --------------------------------------------------
-
 for message in st.session_state.messages:
 
     with st.chat_message(message["role"]):
@@ -68,7 +64,6 @@ question = st.chat_input(
 # Process question
 # --------------------------------------------------
 if question:
-
     # Display student question
     with st.chat_message("user"):
 

@@ -32,7 +32,7 @@ Architecture:
         |
         v
     Send to Prompt / Ollama LLM
-नेपाली:
+
 यो file को मुख्य काम institute को policy document बाट
 student को question अनुसार relevant information खोज्नु हो।
 Flow:
@@ -56,38 +56,19 @@ Flow:
 # 1. IMPORT LIBRARIES
 # ============================================================
 import os
-from importlib import import_module
 from pathlib import Path
-# Newer LangChain versions expose vector stores through langchain_community;
-# older installations expose them through langchain.
-try:
-    FAISS = import_module("langchain_community.vectorstores").FAISS
-except ImportError:
-    FAISS = import_module("langchain.vectorstores").FAISS
-# Support both older LangChain installations and newer split packages.
-try:
-    Document = import_module("langchain_core.documents").Document
-except ImportError:
-    Document = import_module("langchain.schema").Document
-# Newer LangChain versions provide this integration as a separate package;
-# older installations expose it through langchain_community.
-try:
-    OllamaEmbeddings = import_module("langchain_ollama").OllamaEmbeddings
-except ImportError:
-    OllamaEmbeddings = import_module(
-        "langchain_community.embeddings"
-    ).OllamaEmbeddings
-# Newer LangChain versions provide splitters as a separate package;
-# older installations expose them through langchain.
-try:
-    RecursiveCharacterTextSplitter = import_module(
-        "langchain_text_splitters"
-    ).RecursiveCharacterTextSplitter
-except ImportError:
-    RecursiveCharacterTextSplitter = import_module(
-        "langchain.text_splitter"
-    ).RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from langchain_community.vectorstores import FAISS  # FAISS is your vector database/search mechanism. 
+# Facebook AI Similarity Search.FAISS लाई vector librarian जस्तो सम्झनुहोस्
+# "Shelf number 7 मा withdrawal सम्बन्धी paragraph छ!
+from langchain_ollama import OllamaEmbeddings
+# An embedding isn't simply:
+# "convert words into random numbers."
+# It creates a numerical representation intended to capture semantic relationships.
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+# RecursiveCharacterTextSplitter intelligently tries different separators when splitting text
 
+# own mini .env loader.
 def load_dotenv(dotenv_path=".env"):
     env_file = Path(dotenv_path)
     if not env_file.is_file():
@@ -103,11 +84,9 @@ def load_dotenv(dotenv_path=".env"):
 # 2. LOAD ENVIRONMENT VARIABLES
 # ============================================================
 """
-English:
 load_dotenv() reads the .env file.
 For example:
 OLLAMA_EMBED_MODEL=embeddinggemma:latest
-नेपाली:
 load_dotenv() ले .env file पढ्छ।
 त्यसबाट Ollama embedding model को नाम
 हामीले लिन सक्छौं।
@@ -117,11 +96,9 @@ load_dotenv()
 # 3. GET OLLAMA EMBEDDING MODEL
 # ============================================================
 """
-English:
 Read the embedding model name from .env.
 If .env does not contain the value,
 use embeddinggemma:latest as the default.
-नेपाली:
 .env मा embedding model को नाम छ भने त्यो प्रयोग गर्छ।
 नभए default रूपमा embeddinggemma:latest प्रयोग गर्छ।
 """
@@ -133,15 +110,13 @@ EMBED_MODEL = os.getenv(
 # 4. FIND POLICY FILE
 # ============================================================
 """
-English:
 Path to our policy document:
 Documents/policy.txt
-नेपाली:
 हाम्रो institute policy document को location
 Documents/policy.txt हो।
 """
-POLICY_FILE = (
-    Path(__file__).parent
+POLICY_FILE = (   # __file__ implies current file which is rag_service.py
+    Path(__file__).parent  # get the dir containing rag_service.py 14Sep_ollama_langchain\Documents
     / "Documents"
     / "policy.txt"
 )
@@ -150,9 +125,7 @@ POLICY_FILE = (
 # ============================================================
 def load_policy_documents():
     """
-    English:
     Read policy.txt and convert it into a LangChain Document.
-    नेपाली:
     policy.txt पढेर LangChain Document बनाउँछ।
     """
     # --------------------------------------------------------
@@ -164,50 +137,41 @@ def load_policy_documents():
     # --------------------------------------------------------
     # Create LangChain Document
     # --------------------------------------------------------
-    document = Document(
+    document = Document(  # convert raw text into a LangChain Document
         # Actual policy content
         page_content=policy_text,
-        # Information about where the document came from
+        # Meta data
         metadata={
             "source": "Documents/policy.txt"
         }
     )
-    # Return a list because LangChain works with
-    # a collection of documents.
-    return [document]
+    # Return a list because LangChain works with a collection of documents later staring today with just 1 Document
+    return [document] 
 # ============================================================
 # 6. CREATE VECTOR STORE
 # ============================================================
 def build_vector_store():
     """
-    English:
     Build our FAISS vector database.
     Steps:
         1. Load policy
         2. Split policy into chunks
         3. Create Ollama embeddings
         4. Store embeddings in FAISS
-    नेपाली:
-        १. Policy पढ्ने
-        २. Policy लाई साना chunks मा काट्ने
-        ३. Ollama बाट embeddings बनाउने
-        ४. FAISS मा embeddings store गर्ने
     """
     # ========================================================
     # STEP 1: LOAD DOCUMENT
     # ========================================================
-    documents = load_policy_documents()
+    documents = load_policy_documents() # documents= [document1, document1, document3, ..]
     # ========================================================
     # STEP 2: SPLIT DOCUMENT INTO CHUNKS
     # ========================================================
     """
-    English:
     Large documents are split into smaller pieces.
     chunk_size = 500
         Maximum approximate size of each chunk.
     chunk_overlap = 50
         Some text is repeated between chunks.
-    नेपाली:
     ठूलो document लाई सानो-सानो भागमा विभाजन गर्छ।
     chunk_size = 500
         लगभग 500 characters सम्मको chunk।
@@ -226,18 +190,14 @@ def build_vector_store():
         chunk_overlap=50
     )
     # Actually split the document
-    chunks = splitter.split_documents(
-        documents
-    )
+    chunks = splitter.split_documents(documents)
     # ========================================================
     # STEP 3: CREATE OLLAMA EMBEDDINGS
     # ========================================================
     """
-    English:
     Ollama converts each text chunk into a numerical vector.
     Model:
         embeddinggemma:latest
-    नेपाली:
     Ollama ले text लाई numerical vector मा convert गर्छ।
     Example:
         "withdrawal policy"
@@ -245,32 +205,23 @@ def build_vector_store():
         [0.12, -0.44, 0.83, ...]
     Similar meanings produce similar vectors.
     """
-    embeddings = OllamaEmbeddings(
-        model=EMBED_MODEL
-    )
+    embeddings = OllamaEmbeddings(model=EMBED_MODEL)
     # ========================================================
     # STEP 4: CREATE FAISS VECTOR STORE
     # ========================================================
     """
-    English:
     FAISS stores the vectors and allows fast similarity search.
-    नेपाली:
     FAISS ले vectors store गर्छ र question सँग
     सबैभन्दा मिल्ने document खोज्न मद्दत गर्छ।
     """
-    vector_store = FAISS.from_documents(
-        chunks,
-        embeddings
-    )
+    vector_store = FAISS.from_documents(chunks,embeddings)
     # Return the completed vector store
     return vector_store
 # ============================================================
 # 7. BUILD VECTOR STORE
 # ============================================================
 """
-English:
 Build the vector store when this module is loaded.
-नेपाली:
 यो module load हुँदा policy को vector store तयार हुन्छ।
 """
 vector_store = build_vector_store()
@@ -279,10 +230,8 @@ vector_store = build_vector_store()
 # ============================================================
 def rag_call(question: str):
     """
-    English:
     Search the policy document for information relevant
     to the student's question.
-    नेपाली:
     Student को question अनुसार policy document बाट
     relevant information खोज्छ।
     """
@@ -299,17 +248,14 @@ def rag_call(question: str):
     # --------------------------------------------------------
     if not documents:
         return (
-            "No relevant policy "
-            "was found."
+            "No relevant policy was found."
         )
     # --------------------------------------------------------
     # Extract text from retrieved documents
     # --------------------------------------------------------
-    policy_text = []
+    policy_text = [] # This creates an empty list.
     for document in documents:
-        policy_text.append(
-            document.page_content
-        )
+        policy_text.append(document.page_content)
     # --------------------------------------------------------
     # Combine retrieved chunks
     # --------------------------------------------------------

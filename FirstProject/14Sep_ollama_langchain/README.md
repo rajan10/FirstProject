@@ -171,19 +171,12 @@ Technology	Purpose
 ├── 📄 .env
 ├── 📄 .env.example
 ├── 📄 requirements.txt
-│
 ├── 🎨 app.py
-│
 ├── 🗄️ db_manager.py
-├── 📥 data_ingest.py
-│
 ├── 📚 rag_service.py
 ├── 📝 prompt.py
 ├── 🦙 llm_provider.py
 ├── 🔗 lang_chain.py
-│
-├── 🧪 test.py
-│
 └── 📂 Documents/
     └── 📄 policy.txt
 📄 File Responsibilities
@@ -192,7 +185,6 @@ app.py
 The Streamlit frontend.
 
 Responsible for:
-
 Displaying the chatbot
 Accepting student questions
 Displaying chat history
@@ -215,7 +207,6 @@ Retrieving courses
 Formatting course information
 
 Main functions:
-
 create_courses_table()
 get_courses()
 get_courses_context()
@@ -497,3 +488,25 @@ MYSQL_URI=mysql+pymysql://root:YOUR_PASSWORD@localhost:3306/student_db
 OLLAMA_CHAT_MODEL=llama3.2:latest
 
 OLLAMA_EMBED_MODEL=embeddinggemma:latest
+
+
+
+db_manager.py
+     ↓
+get_courses_context()
+
+rag_service.py
+     ↓
+rag_call()
+
+prompt.py
+     ↓
+ChatPromptTemplate
+
+llm_provider.py
+     ↓
+get_llm()
+
+lang_chain.py
+     ↓
+CONNECTS EVERYTHING

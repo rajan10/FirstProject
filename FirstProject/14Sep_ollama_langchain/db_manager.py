@@ -1,15 +1,14 @@
 """
 db_manager.py
 This file handles MySQL database operations.
-नेपाली:
 यो file ले MySQL database सँग connection गर्छ
 र courses_info बाट course data ल्याउँछ।
 """
-
 import os
 
-from dotenv import load_dotenv  # type: ignore[import-not-found]
-from sqlalchemy import create_engine, text  # type: ignore[import-not-found]
+from dotenv import load_dotenv  
+from sqlalchemy import create_engine, text 
+#sqlalchemy is used to communicate with db
 # ---------------------------------------------------------
 # Load environment variables
 # ---------------------------------------------------------
@@ -21,20 +20,16 @@ MYSQL_URI = os.getenv("MYSQL_URI")
 # ---------------------------------------------------------
 if not MYSQL_URI:
     raise ValueError(
-        "MYSQL_URI is missing. "
-        "Please create a .env file."
+        "MYSQL_URI is missing.Please create a .env file."
     )
 # ---------------------------------------------------------
 # Create MySQL engine
 # ---------------------------------------------------------
 engine = create_engine(
     MYSQL_URI,
-    pool_pre_ping=True
+    pool_pre_ping=True  # if in pool connections, pre_ping & if still alive connect to that conn
 )
-# English:
 # engine is responsible for connecting Python to MySQL.
-#
-# नेपाली:
 # engine ले Python र MySQL बीच connection manage गर्छ।
 # ---------------------------------------------------------
 # Create course_info table
@@ -75,16 +70,15 @@ def get_courses():
             text(sql)
         )
         # Database rows लाई dictionary मा convert गर्छ
-        rows = result.mappings().all()
-    return [
-        dict(row)
-        for row in rows
-    ]
+        rows = result.mappings().all() # maps to dict
+    return [dict(row)for row in rows] #list comprehension which converts each row into normal Python dict
+# for = one by one
+# DICT =put into a labeled box
 # ---------------------------------------------------------
 # Convert courses into LLM-readable text
 # ---------------------------------------------------------
 def get_courses_context():
-    courses = get_courses()
+    courses = get_courses() #in dict form
     if not courses:
         return (
             "No course information is currently available."
@@ -102,3 +96,25 @@ def get_courses_context():
     # IMPORTANT:
     # return must be OUTSIDE the for loop
     return "\n\n".join(course_text)
+
+"""
+Course Code: CS101
+Course Name: Python Programming
+Duration: 3 months
+Fee: $750.00
+
+Course Code: CS102
+Course Name: Java Programming
+Duration: 2 months
+Fee: $850.00
+
+Course Code: CS103
+Course Name: JavaScript Programming
+Duration: 3 months
+Fee: $950.00
+
+Course Code: CS104
+Course Name: GenAI Programming
+Duration: 4 months
+Fee: $1000.00
+"""

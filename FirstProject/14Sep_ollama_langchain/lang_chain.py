@@ -8,28 +8,19 @@ RAG CALL
 PROMPT
    +
 OLLAMA
-नेपाली:
+
 सबै components लाई एउटै LangChain pipeline मा जोड्छ।
 """
-from db_manager import (
-    get_courses_context
-)
-from rag_service import (
-    rag_call
-)
-from prompt import (
-    prompt
-)
-from llm_provider import (
-    get_llm
-)
+from db_manager import get_courses_context
+from rag_service import rag_call
+from prompt import prompt
+from llm_provider import get_llm
 # ---------------------------------------------------------
 # DB CALL
 # ---------------------------------------------------------
 def db_call(question: str):
     """
     Get course data from MySQL.
-    नेपाली:
     Student को question पाएपछि MySQL बाट
     course information ल्याउँछ।
 
@@ -50,30 +41,63 @@ def build_chain():
             "policy_data":
                 rag_call,
             # Original student question
-            "question":
-                lambda question: question
+            "question":  # lambda is a small anonymous function
+                lambda question: question # whatever question you give me, return the same question
         }
         # Send all data to prompt
-        | prompt
+        | prompt  # pipeline means pass the output of 1 component to the next component 
         # Send prompt to Ollama
-        | get_llm()
+        | get_llm()  # db_call -> rag_call -> question -> prompt -> get_llm()
     )
     return chain
 # ---------------------------------------------------------
 # Create chain
 # ---------------------------------------------------------
-chain = build_chain()
+chain = build_chain() #create the machine/pipeline
 # ---------------------------------------------------------
 # Ask student
 # ---------------------------------------------------------
-def ask_student(question: str):
+def ask_student(question: str): # ask_student is like front desk reception counter
     """
     Send question through complete pipeline.
-    नेपाली:
-    Student question लाई DB + RAG + Prompt + Ollama
-    बाट process गर्छ।
+    Student ask in the front_desk(ask_student) "What is the Python course fee?"
     """
-    answer = chain.invoke(
-        question
-    )
-    return answer.content
+    answer = chain.invoke(question) #run the chain/pipeline and get the answer box
+    return answer.content # from answer box, retrieve the contents
+
+"""
+"What is the Python course fee?"
+                │
+                ▼
+       ┌─────────────────┐
+       │     DB CALL     │
+       └─────────────────┘
+                │
+                ▼
+          course_data
+                │
+
+"What is the Python course fee?"
+                │
+                ▼
+       ┌─────────────────┐
+       │    RAG CALL     │
+       └─────────────────┘
+                │
+                ▼
+          policy_data
+                │
+
+                ▼
+       ┌─────────────────┐
+       │      PROMPT     │
+       └─────────────────┘
+                │
+                ▼
+       ┌─────────────────┐
+       │     OLLAMA      │
+       └─────────────────┘
+                │
+                ▼
+             answer
+"""
