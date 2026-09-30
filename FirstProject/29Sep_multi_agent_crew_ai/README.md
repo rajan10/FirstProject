@@ -475,23 +475,6 @@ Final Content
 
 This creates a simple information pipeline between agents.
 
-### Easy mnemonic
-
-> **R → C → W**  
-> **Research → Context → Write**
-
-Think of it like baking:
-
-```text
-🔍 Researcher = finds ingredients
-        ↓
-📦 Context = puts ingredients in the kitchen
-        ↓
-👨‍🍳 Writer = bakes the cake
-        ↓
-🍰 Final Course = finished product
-```
-
 ---
 
 # 🧠 CrewAI + Ollama Architecture
@@ -944,11 +927,6 @@ If you find this project useful for learning CrewAI and Agentic AI:
 
 ---
 
-## 🍪 Final Learning Mnemonic
-
-Remember the whole project with:
-
-> **“Research the recipe, pass the ingredients, let the writer bake the course.”** 🍪
 
 ```text
 🔍 Researcher
